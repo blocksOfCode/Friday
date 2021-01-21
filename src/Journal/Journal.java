@@ -32,6 +32,8 @@ public class Journal {
         itemTags = scan.nextLine();
 
 
+        //more comments
+
 
         //import all the data on a per line basis
         int placeholder = 0;
