@@ -1,4 +1,4 @@
-import Journal.Journal;
+import Journal.*;
 
 public class Main {
 
@@ -7,7 +7,11 @@ public class Main {
 
         String directory = "/home/jack/Downloads/Journal.csv";
 
-        System.out.println("DID IT WORK? " + "");
+        Entry[] theGoods = Journal.createJournal(directory);
+
+        String textFromEntry = theGoods[0].getText();
+
+        System.out.println("DID IT WORK? " + textFromEntry);
 
     }
 }
