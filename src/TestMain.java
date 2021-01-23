@@ -35,10 +35,26 @@ public class TestMain {
 
 
 
-        //entry1.replace(",","@");
-        //entry1.replaceFirst("(?:\")+", "B");
+         /*
+        Okay, I think I know what to do now.
+        1) find the quotes and save their actual spots
+        2) save a substring of that data to the entry data
+        3) replace every character in between the quotes with a space
+        4) Done (finally)!
+         */
 
 
+        //1) find the quotes and save their actual spots
+        int startIndexOfEntry = entry1.indexOf('"');
+        int lastIndexOfEntry = entry1.lastIndexOf('"');
+
+        //2) save a substring of that data to the entry data
+        String entryText = entry1.substring(startIndexOfEntry,lastIndexOfEntry);
+
+        //3) replace every character in between the quotes with a space
+        entry1 = entry1.replace(entry1.substring(startIndexOfEntry,lastIndexOfEntry+1)," no data ");
+
+        //4) Done (finally)!
 
         //parse data
         for (int j = 0; j < entry1.length(); j++) {
@@ -70,16 +86,3 @@ public class TestMain {
 
 
 
-/*
-//parse data
-        for (int j = 0; j < entry1.length(); j++) {
-            if (entry1.charAt(j) == ',') {
-                finalEntry[entry] = parseThing;
-                parseThing = "";
-                entry++;
-            } else {
-                parseThing += entry1.charAt(j);
-            }
-
-        }
- */

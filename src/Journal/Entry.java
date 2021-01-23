@@ -4,6 +4,9 @@ public class Entry {
     //the exact number of variables in Day One Journal .csv export
     public String[] data;
 
+
+
+
     public Entry(String[] data) {
         this.data = data;
     }
