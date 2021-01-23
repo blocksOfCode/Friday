@@ -6,20 +6,17 @@ import java.util.Scanner;
 
 public class Journal {
     String itemTags;
-    final String directory;
-    final int totalEntries;
+    int totalEntries;
     String[] rawData;
     Entry[] entries;
 
 
     //create the new journal and all that entails
-    public Journal(String directory) {
-        //assign value to directory
-        this.directory = directory;
+    public void createJournal(String directory) {
 
 
         //create new file + scanner
-        File filed = new File(this.directory);
+        File filed = new File(directory);
         //scanner
         Scanner scan = null;
         try {
@@ -32,7 +29,6 @@ public class Journal {
         itemTags = scan.nextLine();
 
 
-        //more comments
 
 
         //import all the data on a per line basis
@@ -81,7 +77,7 @@ public class Journal {
         //parse data
         for (int i = 0; i < data.length(); i++) {
             if (data.charAt(i) == ',') {
-                parsed.data[i] = holdingString;
+                parsed.data[entry] = holdingString;
                 holdingString = "";
                 entry++;
             } else {
