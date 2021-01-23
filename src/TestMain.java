@@ -6,7 +6,7 @@ public class TestMain {
 
     public static void main(String[] args) {
         //create new file + scanner
-        File filed = new File("/home/jack/Downloads/Journal.csv");
+        File filed = new File("/home/jack/Documents/Data/Journal.csv");
         //scanner
         Scanner scan = null;
         try {
@@ -21,9 +21,12 @@ public class TestMain {
         //BETA NOTE: this code snippet is meant to test what data I can get from a single line
         String entry1 = scan.nextLine();
 
+
+
+
+
         //close the scanner
         scan.close();
-
 
 
         //BETA NOTE: Parse data and see what will need to be assigned to the file
@@ -45,8 +48,8 @@ public class TestMain {
 
 
         //1) find the quotes and save their actual spots
-        int startIndexOfEntry = entry1.indexOf('"');
-        int lastIndexOfEntry = entry1.lastIndexOf('"');
+        int startIndexOfEntry = entry1.indexOf('\"');
+        int lastIndexOfEntry = entry1.lastIndexOf('\"');
 
         //2) save a substring of that data to the entry data
         String entryText = entry1.substring(startIndexOfEntry,lastIndexOfEntry);
@@ -79,7 +82,7 @@ public class TestMain {
 
 
         //println
-        System.out.println("\"this is a quote\"");
+        System.out.println(entryText);
     }
 
 }

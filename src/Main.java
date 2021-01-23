@@ -1,16 +1,15 @@
-import Journal.*;
+import DataRetrieval.Journal;
 
 public class Main {
 
     public static void main(String[] args) {
 
 
-        /*String directory = "/home/jack/Downloads/Journal.csv";
-        Entry[] theGoods = Journal.createJournal(directory);
-        String textFromEntry = theGoods[0].getText();
-        System.out.println("DID IT WORK? " + textFromEntry);*/
 
 
+        String thisthing = Journal.viewEntryText("2019-10-23");
+
+        System.out.println(thisthing);
 
 
 
