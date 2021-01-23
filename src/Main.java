@@ -9,7 +9,7 @@ public class Main {
 
         Entry[] theGoods = Journal.createJournal(directory);
 
-        String textFromEntry = theGoods[0].getText();
+        String textFromEntry = theGoods[1].getText();
 
         System.out.println("DID IT WORK? " + textFromEntry);
 

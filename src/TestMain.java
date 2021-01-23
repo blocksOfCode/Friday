@@ -33,6 +33,13 @@ public class TestMain {
 
         int entry = 0;
 
+
+
+        //entry1.replace(",","@");
+        //entry1.replaceFirst("(?:\")+", "B");
+
+
+
         //parse data
         for (int j = 0; j < entry1.length(); j++) {
             if (entry1.charAt(j) == ',') {
@@ -54,6 +61,25 @@ public class TestMain {
         }
 
 
+
+        //println
+        System.out.println("\"this is a quote\"");
     }
 
 }
+
+
+
+/*
+//parse data
+        for (int j = 0; j < entry1.length(); j++) {
+            if (entry1.charAt(j) == ',') {
+                finalEntry[entry] = parseThing;
+                parseThing = "";
+                entry++;
+            } else {
+                parseThing += entry1.charAt(j);
+            }
+
+        }
+ */
