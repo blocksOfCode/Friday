@@ -1,4 +1,11 @@
 package DataRetrieval;
+/**
+ * @author blocksOfCode
+ * @version 0.1
+ * @since 0.1
+ */
+
+
 
 //imports
 import java.io.*;
@@ -6,9 +13,11 @@ import java.util.Scanner;
 
 public class Journal {
 
-    public static String viewEntryText(String date) {
+
+    /** @return A String representing the text of a single entry from the .csv journal file */
+    public static String getEntryText(String date, String directory) {
         //create new file + scanner
-        File filed = new File("/home/jack/Documents/Data/Journal.csv");
+        File filed = new File(directory);
         //scanner
         Scanner scan = null;
         try {
@@ -37,5 +46,8 @@ public class Journal {
 
         return "The Specified Entry Cannot Be Found";
     }
+
+
+
 
 }
