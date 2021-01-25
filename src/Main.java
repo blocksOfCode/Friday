@@ -12,12 +12,15 @@ public class Main {
 
         final String directory = "/home/jack/Documents/Data/Journal.csv";
 
+        //Use cases for finished methods
+        //String thisThing = Journal.getEntryText("2019-12-24", directory);
+        //boolean starry = Journal.getIsEntryStarred("2019-12-24", directory);
+        double timeEdited = Journal.getEntryTimeSpentWriting("2019-12-24", directory);
 
 
 
-        String thisThing = Journal.getEntryText("2019-12-24", directory);
-
-        System.out.println(thisThing);
+        //System.out.println(thisThing);
+        System.out.println(timeEdited);
 
 
 
