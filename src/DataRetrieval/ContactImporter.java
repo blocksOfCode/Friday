@@ -66,14 +66,6 @@ public class ContactImporter {
         return contacts;
     }
 
-
-
-
-
-
-
-
-
     //private method that returns the number of contacts in file
     private static int contactNumber(String directory) {
         File filed = new File(directory);
