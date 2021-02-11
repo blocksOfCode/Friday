@@ -30,7 +30,7 @@ public class Main {
         System.out.println(contacts[38].getHomePhone());
 
         //lets try this
-        String[] accountTry = contacts[38].getAccountsOn(directory);
+        String[] accountTry = contacts[38].getPossibleAccountsUsername(directory);
 
         for(String e : accountTry) {
             System.out.println(e);

@@ -81,7 +81,7 @@ public class Contact {
 
 
     //more complicated get methods
-    public String[] getAccountsOn(String dataFolderDirectory) {
+    public String[] getPossibleAccountsUsername(String dataFolderDirectory) {
 
         String directory = dataFolderDirectory + "/Contacts/UsernameTraces/" + getUsername() + ".txt";
 
