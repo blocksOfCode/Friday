@@ -2,6 +2,7 @@ import DataRetrieval.Contact;
 import DataRetrieval.ContactImporter;
 import DataRetrieval.Journal;
 
+import java.io.IOException;
 
 
 /*
@@ -31,9 +32,21 @@ public class Main {
 
         //lets try this
         String[] accountTry = contacts[38].getPossibleAccountsUsername(directory);
-
         for(String e : accountTry) {
             System.out.println(e);
+        }
+
+
+
+
+
+        //this runs an external python file for more complicated stuff
+        String command = "python3 /home/jack/sherlock/sherlock noobmaster69";
+        try {
+            Process p = Runtime.getRuntime().exec(command);
+            System.out.println("This code executed");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 

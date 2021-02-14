@@ -4,14 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-//example code
-
-//C:\Users\jbyer\Downloads\Jack_Byers.csv
-//String contactDirectory = scanner.nextLine();
-//Contact[] contacts = ContactImporter.getContacts(contactDirectory);
-//System.out.println("Name: " + contacts[0].field[0]);
-
-
 public class ContactImporter {
     /*static void exportContact(String directory, String infoToWrite) {
         File file = new File(directory);
